@@ -2,6 +2,7 @@
 
 use Olooeez\DoctrineOrm\Entity\Student;
 use Olooeez\DoctrineOrm\Helper\EntityManagerCreator;
+use Olooeez\DoctrineOrm\Entity\Phone;
 
 require_once(__DIR__ . "/../vendor/autoload.php");
 
@@ -12,5 +13,11 @@ $studentRepository = $entityManager->getRepository(Student::class);
 $studentList = $studentRepository->findAll();
 
 foreach ($studentList as $student) {
-  echo "$student->id - $student->name" . PHP_EOL; 
+  echo "$student->id\t$student->name\t[";
+
+  echo implode(", ", $student->getPhones()
+    ->map(fn (Phone $phone) => $phone->number)
+    ->toArray());
+  
+  echo "]" . PHP_EOL;
 }
