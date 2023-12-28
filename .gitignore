@@ -1,2 +1,5 @@
 # Vendor folder from composer
 vendor/
+
+# Project SQLite database
+db.sqlite
