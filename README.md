@@ -1,4 +1,4 @@
-# doctrine-orm
+# php-doctrine-orm
 
 Base project to test doctrine ORM and learn how it works and how to configure it.
 
@@ -6,8 +6,8 @@ Base project to test doctrine ORM and learn how it works and how to configure it
 
 1. Clone the Repository:
     ```
-    git clone https://gitlab.com/alura-courses-code/php/doctrine-orm.git
-    cd doctrine-orm
+    git clone https://gitlab.com/alura-courses-code/php/php-doctrine-orm.git
+    cd php-doctrine-orm
     ```
 
 2. Install Dependencies:
@@ -26,4 +26,4 @@ If you're interested in contributing to this project, feel free to open a merge 
 
 # License
 
-This project is licensed under the [MIT License](https://gitlab.com/alura-courses-code/php/doctrine-orm/-/blob/main/LICENSE). Refer to the LICENSE file for more details.
+This project is licensed under the [MIT License](https://gitlab.com/alura-courses-code/php/php-doctrine-orm/-/blob/main/LICENSE). Refer to the LICENSE file for more details.
